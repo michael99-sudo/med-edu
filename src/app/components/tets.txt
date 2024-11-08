@@ -1,0 +1,131 @@
+<Box
+sx={{
+  width: "100%",
+  height: 400, // Set the height of the box
+  display: "flex", // Center content in the box
+  marginTop: 5,
+  backgroundImage: `url('https://www.shutterstock.com/image-photo/medication-tablet-female-pharmacist-pharmacy-600nw-2256995579.jpg')`,
+  backgroundSize: "cover", // Cover the entire box
+  backgroundPosition: "center", // Center the image in the box
+  color: "#fff",
+  borderTopLeftRadius: 20,
+}}
+>
+<Box
+  display="flex"
+  sx={{
+    flexDirection: "row",
+    marginTop: 6,
+  }}
+>
+  <Container>
+    <Typography
+      variant="h3"
+      sx={{ color: "#15355e", fontWeight: "bold", textAlign: "left" }}
+    >
+      Understanding your medication
+    </Typography>
+    <Typography
+      variant="h6"
+      sx={{
+        color: "#435d7e",
+        fontSize: 12,
+        marginTop: 5,
+        textAlign: "left",
+      }}
+    >
+      Helping you make sense of your medications to improve health and
+      well-being. We provide clear, reliable information on how your
+      treatments work and why they matter. Take control of your
+      healthcare journey with confidence and peace of mind.
+    </Typography>
+
+    <Button
+      variant="contained"
+      size="small"
+      sx={{
+        borderRadius: 5,
+        backgroundColor: "#15355e",
+        marginTop: 5,
+        marginLeft: 20,
+      }}
+    >
+      <Typography
+        sx={{
+          color: "#ffff",
+          fontWeight: "bold",
+          fontSize: 10,
+        }}
+      >
+        Learn More
+      </Typography>
+    </Button>
+  </Container>
+
+  {/* second section for the first hero section */}
+  <Container sx={{ marginLeft: 35, marginTop: 12 }}>
+    <Card sx={{ width: 275 }}>
+      <CardContent>
+        <Box
+          display={"flex"}
+          sx={{ flexDirection: "row", justifyContent: "space-between" }}
+        >
+          <Typography sx={{ color: "#435d7e", fontSize: 12 }}>
+            More than 725 users are with us on WellSpring
+          </Typography>
+          <TrendingUpSharpIcon sx={{ color: "green" }} />
+        </Box>
+
+        <Divider sx={{ marginTop: 2 }}></Divider>
+
+        <Box
+          display={"flex"}
+          sx={{
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            marginTop: 2,
+          }}
+        >
+          <AvatarGroup max={4}>
+            <Avatar
+              sx={{ width: 35, height: 35 }}
+              alt="Remy Sharp"
+              src="/static/images/avatar/1.jpg"
+            />
+            <Avatar
+              sx={{ width: 35, height: 35 }}
+              alt="Travis Howard"
+              src="/static/images/avatar/2.jpg"
+            />
+            <Avatar
+              sx={{ width: 35, height: 35 }}
+              alt="Cindy Baker"
+              src="/static/images/avatar/3.jpg"
+            />
+            <Avatar
+              sx={{ width: 35, height: 35 }}
+              alt="Agnes Walker"
+              src="/static/images/avatar/4.jpg"
+            />
+            <Avatar
+              sx={{ width: 35, height: 35 }}
+              alt="Trevor Henderson"
+              src="/static/images/avatar/5.jpg"
+            />
+          </AvatarGroup>
+          <Typography
+            sx={{
+              color: "#15355e",
+              fontWeight: "bold",
+              fontSize: 15,
+            }}
+          >
+            475 +
+          </Typography>
+        </Box>
+      </CardContent>
+    </Card>
+  </Container>
+</Box>
+</Box>
